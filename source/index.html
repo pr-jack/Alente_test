@@ -1,11 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anne Sweet</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alente</title>
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  Hello world!
+  <div class="page-wrapper">
+		<header class="page-header">
+      <div class="page-header__firstline firstline">
+        <div class="firstline__social social">
+          <ul class="social__list">
+            <li class="socila__item">
+              <a href="#" class="social__link social__link--facebook"></a>
+            </li>
+            <li class="socila__item">
+              <a href="#" class="social__link social__link--facebook"></a>
+            </li>
+            <li class="socila__item">
+              <a href="#" class="social__link social__link--facebook"></a>
+            </li>
+            <li class="socila__item">
+              <a href="#" class="social__link social__link--facebook"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="firstline__location location">
+          <select name="location" id="" class="location__list">
+            <option class="location__item" selected>Москва</option>
+            <option class="location__item">Калининград</option>
+          </select>
+        </div>
+        <div class="firstline__phone">
+          <a href="+7 (499) 240-10-01" class="firstline__nomber">+7 (499) 240-10-01</a>
+        </div>
+        <div class="firstline__personal">
+          <a href="#openModalLogin" class="firstline__personal--login">Войти</a>
+          <a href="#" class="firstline__personal--cart">Корзина</a>
+        </div>
+        <div id="openModalLogin" class="firstline__personal--modal modal-login">
+          <form class="modal-login__form" action="#" method="post">
+            <h2 class="modal-login__title">Вход</h2>
+            <p class="modal-login__item">
+              <input class="modal-login__input" id="user-name" type="text" name="username" placeholder="Логин" required>
+            </p>
+            <p class="modal-login__item">
+              <input class="modal-login__input" id="password" type="password" name="password" placeholder="Пароль" required>
+            </p>
+            <button class="btn modal-login__btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+      <div class="page-header__main-nav main-nav">
+        <div class="main-nav__logo">
+          <a class="main-nav__logo--image"></a>
+        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link"></a>
+          </li>
+          <li class="main-nav__list--item">
+            <a href="#" class="main-nav__link"></a>
+          </li>
+          <li class="main-nav__list--item">
+
+          </li>
+          <li class="main-nav__list--item">
+
+          </li>
+          <li class="main-nav__list--item">
+
+          </li>
+        </ul>
+      </div>
+		</header>
+	</div>
 </body>
 </html>

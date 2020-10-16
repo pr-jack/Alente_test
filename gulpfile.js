@@ -7,9 +7,10 @@ var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
+var server = require("browser-sync").create();
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
-var server = require("browser-sync").create();
+var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
@@ -35,7 +36,7 @@ gulp.task("server", function () {
   });
     gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
     gulp.watch("source/js/**/*.js", gulp.series("copy"));
-    gulp.watch("source/img/**/*.{png,jpg,svg}", gulp.series("html", "refresh"));
+    gulp.watch("source/img/icon-*.svg", gulp.series("html", "refresh"));
     gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
@@ -72,8 +73,7 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
-    "source/slick/**.css"
+    "source/js/**"
     ], {
       base: "source"
     })

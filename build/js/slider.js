@@ -1,0 +1,1 @@
+"use strict";var swiper=new Swiper(".swiper-container",{centeredSlides:!0,keyboard:!0,slidesPerView:1,loop:!0,loopedSlides:1,spaceBetween:14,slidesOffsetBefore:20,slidesOffsetAfter:20});
