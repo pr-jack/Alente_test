@@ -37,8 +37,11 @@
         </div>
         <div class="firstline__personal">
           <a href="#openModalLogin" class="firstline__personal--login">Войти</a>
-          <a href="#" class="firstline__personal--cart">Корзина</a>
+          <a href="#openModalCart" class="firstline__personal--cart">Корзина</a>
         </div>
+
+        <!-- Modal Window Login -->
+
         <div id="openModalLogin" class="firstline__personal--modal modal-login">
           <form class="modal-login__form" action="#" method="post">
             <h2 class="modal-login__title">Вход</h2>
@@ -51,6 +54,51 @@
             <button class="btn modal-login__btn" type="submit">Отправить</button>
           </form>
         </div>
+
+        <!-- End Modal Window Login -->
+        <!-- Modal Window Cart -->
+
+        <div id="openModalCart" class="firstline__personal--modal modal-cart">
+          <form class="modal-cart__form" action="#" method="post">
+            <fieldset class="modal-cart__fieldset">
+              <h2 class="modal-cart__title">Товары</h2>
+              <ul class="modal-cart__list">
+                <li class="modal-cart__item">
+                  <p class="modal-cart__item--description">
+                    Однобортный пиджак Louis Purple
+                  </p>
+                  <p class="modal-cart__item--price">
+                    75.500 руб.
+                  </p>
+                </li>
+                <li class="modal-cart__item">
+                  <p class="modal-cart__item--description">
+                    Однобортный пиджак Louis Purple
+                  </p>
+                  <p class="modal-cart__item--price">
+                    55.500 руб.
+                  </p>
+                </li>
+                <li class="modal-cart__item">
+                  <p class="modal-cart__item--description">
+                    Однобортный пиджак Louis Purple
+                  </p>
+                  <p class="modal-cart__item--price">
+                    85.700 руб.
+                  </p>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="modal-cart__totall">
+              <h2 class="modal-cart__total--title">Всего</h2>
+              <p class="modal-cart__total--price">245.700 руб.</p>
+            </fieldset>
+            <button class="btn modal-login__btn" type="submit">Оформить заказ</button>
+          </form>
+        </div>
+
+        <!-- End Modal Window Cart -->
+
       </div>
       <div class="page-header__main-nav main-nav">
         <div class="main-nav__logo">
@@ -58,23 +106,166 @@
         </div>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link"></a>
+            <a href="#" class="main-nav__item--link">Пошив  одежды</a>
+            <ul class="main-nav__item--list">
+              <li class="main-nav__item--item">
+                <a href="#" class="main-nav__item--link">Костюмы</a>
+              </li>
+              <li class="main-nav__item--item">
+                <a href="#" class="main-nav__item--link">Сорочки</a>
+              </li>
+              <li class="main-nav__item--item">
+                <a href="#" class="main-nav__item--link">Пальто</a>
+              </li>
+              <li class="main-nav__item--item">
+                <a href="#" class="main-nav__item--link">Обувь</a>
+              </li>
+              <li class="main-nav__item--item">
+                <a href="#" class="main-nav__item--link">Запонки</a>
+              </li>
+              <li class="main-nav__item--item">
+                <a href="#" class="main-nav__item--link">Галстуки</a>
+              </li>
+              <li class="main-nav__item--item">
+                <a href="#" class="main-nav__item--link">Джинсы</a>
+              </li>
+              <li class="main-nav__item--item">
+                <a href="#" class="main-nav__item--link">Нижнее белье</a>
+              </li>
+              <li class="main-nav__item--item">
+                <a href="#" class="main-nav__item--link">Кепки</a>
+              </li>
+            </ul>
           </li>
           <li class="main-nav__list--item">
-            <a href="#" class="main-nav__link"></a>
+            <a href="#" class="main-nav__link">интернет магазин</a>
           </li>
           <li class="main-nav__list--item">
-
+            <a href="#" class="main-nav__link">о магазине</a>
           </li>
           <li class="main-nav__list--item">
-
+            <a href="#" class="main-nav__link">Блог</a>
           </li>
           <li class="main-nav__list--item">
-
+            <a href="#" class="main-nav__link">Контакты</a>
           </li>
         </ul>
       </div>
-		</header>
+      <div class="page-header__intro">
+        <div class="page-header__slogan">
+          Мода - Вопрос Денег. Стиль - Вопрос Индивидуальности.
+        </div>
+        <div class="page-header__image">
+          <img src="img/" alt="Мужчина в костюме">
+        </div>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="catalog">
+        <div class="catalog__nav">
+          <ul class="catalog__nav--list">
+            <li class="catalog__nav--item">
+              <a href="#" class="catalog--nav--link">Костюмы</a>
+            </li>
+            <li class="catalog__nav--item">
+              <a href="#" class="catalog--nav--link">Сорочки</a>
+            </li>
+            <li class="catalog__nav--item">
+              <a href="#" class="catalog--nav--link">Пальто</a>
+            </li>
+            <li class="catalog__nav--item">
+              <a href="#" class="catalog--nav--link">Обувь</a>
+            </li>
+            <li class="catalog__nav--item">
+              <a href="#" class="catalog--nav--link">Запонки</a>
+            </li>
+            <li class="catalog__nav--item">
+              <a href="#" class="catalog--nav--link">Галстуки</a>
+            </li>
+            <li class="catalog__nav--item">
+              <a href="#" class="catalog--nav--link">Джинсы</a>
+            </li>
+            <li class="catalog__nav--item">
+              <a href="#" class="catalog--nav--link">Нижнее белье</a>
+            </li>
+            <li class="catalog__nav--item">
+              <a href="#" class="catalog--nav--link">Кепки</a>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog__blocks blocks">
+          <div class="blocks__item">
+            <a href="#" class="blocks__link"></a>
+            <h3 class="blocks__title">Однобортный пиджак</h3>
+            <p class="blocks__brand">Louis Purple</p>
+            <p class="blocks__description">Коллекция Весна/Лето 2015.</p>
+          </div>
+          <div class="blocks__item">
+            <a href="#" class="blocks__link"></a>
+            <h3 class="blocks__title"></h3>
+            <p class="blocks__brand">Louis Purple</p>
+            <p class="blocks__description">Коллекция Весна/Лето 2015.</p>
+          </div>
+          <div class="blocks__item">
+            <a href="#" class="blocks__link"></a>
+          </div>
+          <div class="blocks__item">
+            <a href="#" class="blocks__link"></a>
+            <h3 class="blocks__title">Готовая обувь</h3>
+            <p class="blocks__brand">Lo White</p>
+            <p class="blocks__brand">и</p>
+            <p class="blocks__brand">Castori</p>
+          </div>
+          <div class="blocks__item">
+            <a href="#" class="blocks__link"></a>
+            <h3 class="blocks__title">Запонки</h3>
+            <p class="blocks__brand">Tateossian</p>
+            <p class="blocks__description">Известный английский производитель аксессуаров.</p>
+          </div>
+          <div class="blocks__item">
+            <a href="#" class="blocks__link"></a>
+            <h3 class="blocks__title">Связать воедино: выбираем шарф!</h3>
+            <p class="blocks__date">30 Октября 2015</p>
+          </div>
+        </div>
+      </section>
+      <section class="adventages">
+        <div class="adventages__text">
+          <h3 class="adventages__title">Пошив костюма на заказ -</h3>
+          <p class="adventages__description">4-5 недель за готовый костюм, сшитый персонально для Вас</p>
+          <p class="advenyages signature">Готовый костюм - 1-2 дня</p>
+        </div>
+      </section>
+      <section class="brands">
+        <ul class="brands__list">
+          <li class="brands__item">
+            <a href="#" class="brands__link">
+              <img src="img/" alt="#" class="brands__image">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a href="#" class="brands__link">
+              <img src="img/" alt="#" class="brands__image">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a href="#" class="brands__link">
+              <img src="img/" alt="#" class="brands__image">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a href="#" class="brands__link">
+              <img src="img/" alt="#" class="brands__image">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a href="#" class="brands__link">
+              <img src="img/" alt="#" class="brands__image">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
 	</div>
 </body>
 </html>
